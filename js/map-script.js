@@ -14,9 +14,9 @@
 		//DEFINE MAP OPTIONS
 		//=======================================================================================
   		var mapOptions = {
-    		zoom: 18,		
+    		zoom: 16,		
 			mapTypeId: google.maps.MapTypeId.ROADMAP,	
-    		center: new google.maps.LatLng(-12.046014, -77.030503),
+    		center: new google.maps.LatLng(53.4783151,-2.2455158),
 			panControl: true,
   			zoomControl: true,
   			mapTypeControl: true,
@@ -54,27 +54,27 @@
 		//ADD NEW MARKER WITH LABEL
 		//=======================================================================================
 		var marker1 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046014, -77.030503),
+       		position: new google.maps.LatLng(53.4791963,-2.2441318),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
-       		labelAnchor: new google.maps.Point(29, 20),
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
+       		labelAnchor: new google.maps.Point(20, 30),
        		labelClass: "labels" // the CSS class for the label
      		});
-    
+		
 		var marker2 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046040, -77.029269),
+       		position: new google.maps.LatLng(53.4771722,-2.245151),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#6a6a6a"><i class="de-icon-taxi"></i></div>',
-       		labelAnchor: new google.maps.Point(0, 0),
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#6a6a6a"><i class="de-icon-wine"></i></div>',
+       		labelAnchor: new google.maps.Point(20, 30),
        		labelClass: "labels" // the CSS class for the label
      		});
-			
+		/*
 		var marker3 = new MarkerWithLabel({
        		position: new google.maps.LatLng(-12.045909, -77.031712),
        		draggable: false,
@@ -128,18 +128,18 @@
          	labelContent: '<div class="de-icon circle small-size" style="background-color:#0d9a48"><i class="de-icon-tree"></i></div>',
        		labelAnchor: new google.maps.Point(0, 0),
        		labelClass: "labels" // the CSS class for the label
-     		});			
+     		});	*/		
     	//marker.setMap( map );
 		
 		
 		//INFO WINDOWS
 		//=======================================================================================
 		var contentString = '<div>'+
-		'WEDDING CEREMONY';
+		'Wedding Ceremony';
       	'</div>';
 		
 		var contentString1 = '<div>'+
-		'WEDDING PARTY';
+		'Reception';
       	'</div>';
 
  	 	var infowindow = new google.maps.InfoWindow({
@@ -155,6 +155,7 @@
 		//OPEN INFO WINDOWS ON LOAD
 		//=======================================================================================
   		infowindow.open(map,marker1);
+  		infowindow1.open(map,marker2);
 		
 
 		//ON MARKER CLICK EVENTS
@@ -171,11 +172,11 @@
     		//map.setCenter(marker.getPosition());			
   		});
 		
-		/*google.maps.event.addListener(marker2, 'click', function() {
-   	 		map.setZoom(17);
-    		map.setCenter(marker.getPosition());
+		google.maps.event.addListener(marker2, 'click', function() {
+   	 		//map.setZoom(17);
+    		//map.setCenter(marker.getPosition());
 			infowindow1.open(map,marker2);
-  		});*/
+  		});
 		
 		//ON BOUND EVENTS AND WINDOW RESIZE
 		//=======================================================================================
