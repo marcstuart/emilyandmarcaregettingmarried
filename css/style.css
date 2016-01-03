@@ -1524,8 +1524,8 @@ a.de-button.outline, span.de-button.outline, input[type=submit].outline{
 }
 
 a.de-button.reverse, span.de-button.reverse, input[type=submit].reverse{
-	background-color:#f0394d; 
-	border:solid 1px #f0394d;
+	background-color:#06589E; 
+	border:solid 1px #06589E;
 	color:#FFF;
 }
 
@@ -2365,8 +2365,8 @@ form .btn-primary.focus,
 form .btn-primary:active,
 form .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-	background-color:#f0394d; 
-	border-color:#f0394d;
+	background-color:#06589E; 
+	border-color:#06589E;
 	color:#FFF;
  	border-color: #cccccc;
 }
