@@ -177,10 +177,10 @@
                         	<div class="row">
 								<div class="col-md-6" style="width:130px;">
                                 	<div class="form-group">
-    									<label for="inputname">*TITLE</label>
+    									<label for="inputtitle">*TITLE</label>
                                         <div class="input-group">
      										<div class="input-group-addon"><i class="de-icon-pencil"></i></div>
-    										<input style="width:55px;" type="text" class="form-control ajax-input" id="inputname" placeholder="" data-required="Title Required" data-output-label="Output Title">
+    										<input style="width:55px;" name="primary_title" type="text" class="form-control ajax-input" id="inputtitle" placeholder="" data-required="Title Required" data-output-label="Person 1 Title">
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@
     									<label for="inputname">*FIRST NAME</label>
                                         <div class="input-group">
      										<div class="input-group-addon"><i class="de-icon-pencil"></i></div>
-    										<input style="150px;" type="text" class="form-control ajax-input" id="inputname" placeholder="" data-required="First Name Required" data-output-label="Output First Name">
+    										<input style="150px;" name="primary_first_name" type="text" class="form-control ajax-input" id="inputname" placeholder="" data-required="First Name Required" data-output-label="Person 1 First Name">
                                         </div>
                                     </div>
                                 </div>
@@ -198,7 +198,7 @@
     									<label for="inputname">*LAST NAME</label>
                                         <div class="input-group">
      										<div class="input-group-addon"><i class="de-icon-pencil"></i></div>
-    										<input type="text" class="form-control ajax-input" id="inputlastname" placeholder="" data-required="" data-output-label="Output Last Name">
+    										<input type="text" class="form-control ajax-input" name="primary_last_name" id="inputlastname" placeholder="" data-required="Last Name Required" data-output-label="Person 1 Last Name">
                                         </div>
                                      </div>
                                 </div>
@@ -207,28 +207,28 @@
 						<div class="row">
 								<div class="col-md-6" style="width:130px;">
                                 	<div class="form-group">
-    									<label for="inputname">TITLE</label>
+    									<label for="inputtitle2">TITLE</label>
                                         <div class="input-group">
      										<div class="input-group-addon"><i class="de-icon-pencil"></i></div>
-    										<input style="width:55px;" type="text" class="form-control ajax-input" id="inputname" placeholder="" data-required="Title Required" data-output-label="Output Title">
+    										<input style="width:55px;" name="secondary_title" type="text" class="form-control ajax-input" id="inputtitle2" placeholder="" data-required="" data-output-label="Person 2 Title">
                                         </div>
                                     </div>
                                 </div>
                             	<div class="col-md-6" style="width:325px;">
                                 	<div class="form-group">
-    									<label for="inputname">FIRST NAME</label>
+    									<label for="inputname2">FIRST NAME</label>
                                         <div class="input-group">
      										<div class="input-group-addon"><i class="de-icon-pencil"></i></div>
-    										<input style="150px;" type="text" class="form-control ajax-input" id="inputname" placeholder="" data-required="First Name Required" data-output-label="Output First Name">
+    										<input style="150px;" name="secondary_first_name" type="text" class="form-control ajax-input" id="inputname2" placeholder="" data-required="" data-output-label="Person 2 First Name">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6" style="width:325px;">
                                 	<div class="form-group">
-    									<label for="inputname">LAST NAME</label>
+    									<label for="inputname2">LAST NAME</label>
                                         <div class="input-group">
      										<div class="input-group-addon"><i class="de-icon-pencil"></i></div>
-    										<input type="text" class="form-control ajax-input" id="inputlastname" placeholder="" data-required="" data-output-label="Output Last Name">
+    										<input type="text" name="secondary_last_name" class="form-control ajax-input" id="inputlastname2" placeholder="" data-required="" data-output-label="Person 2 Last Name">
                                         </div>
                                      </div>
                                 </div>
@@ -238,12 +238,12 @@
     						<label for="inputemail">*EMAIL</label>
                             <div class="input-group">
                             	<div class="input-group-addon"><i class="de-icon-mail"></i></div>
-    							<input type="email" id="inputemail"  class="form-control ajax-input" placeholder="" data-required="Email Required" data-output-label="Output Email">
+    							<input type="email" id="inputemail"  class="form-control ajax-input" placeholder="" data-required="Email Required" data-output-label="Email">
                           	</div>
  						</div>
                         
                         <div class="form-group">
-                           	<div id="input-radio-inline-custom-icon" class="ajax-input ajax-radio" data-required="Please Select Events" data-output-label="I will attend to">
+                           	<div id="input-radio-inline-custom-icon" class="ajax-input ajax-radio" data-required="Please Select If You Are Attending" data-output-label="I will">
                             	<div class="btn-group" data-toggle="buttons">
   									<label class="btn btn-primary custom-option-icon">
     									<input type="radio" name="optionsRadiosInlineCustomIcon" id="wedding-ceremony" value="Accept with Pleasure"> Accept with Pleasure
@@ -257,7 +257,7 @@
                         
                         <div class="form-group">
     						<label for="inputmessage">DIETRY REQUIREMENTS OR ANY OTHER INFORMATION:</label>
-    						<textarea id="inputmessage" class="form-control ajax-input" rows="14" data-output-label="Output Message"></textarea>
+    						<textarea id="inputmessage" class="form-control ajax-input" rows="14" data-output-label="Dietry and Other"></textarea>
  						</div>       
                         
                         <div class="form-group submit-wrapper">

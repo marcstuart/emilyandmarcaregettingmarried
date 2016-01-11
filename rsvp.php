@@ -11,6 +11,7 @@
 		
 		$finalmessage = "";
 		foreach ($_POST["all_input_id"] as $input_id) {
+			
 			if (is_array($_POST[$input_id])){
 				$finalmessage .= $_POST[$input_id."_label"]." : ".implode(", ", $_POST[$input_id]). "\n\n";
 			}
@@ -20,11 +21,11 @@
 			}
 		}
 	
-		$email_to  =  'marc.stuart@live.co.uk'; 
+		$email_to  =  'marcstuart186@gmail.com'; 
 		
 		$headers = "From: ".$_POST["inputemail"]."\r\n";	
 		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";	
-		$subject = "RSVP message from Mr/Mrs ".$_POST["inputname"];	
+		$subject = "RSVP message from ". $_POST["inputtitle"] ." ". $_POST["inputlastname"];	
 				
 		if(mail($email_to, $subject, $finalmessage, $headers)){
         	$output = json_encode(array('type'=>'success', 'text' => 'Message Sent'));
