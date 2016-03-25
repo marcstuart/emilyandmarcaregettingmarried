@@ -540,7 +540,7 @@ img.with-border{
 	list-style-type:none;
 	padding:0;
 	text-align:left;
-	border-top:solid 3px #f0394d
+	border-top:solid 3px #0374D4
 }
 
 #nav-menu li:hover > ul{
@@ -560,7 +560,7 @@ img.with-border{
 }   
 
 #nav-menu ul li a:hover{
-	background-color:#f0394d;
+	background-color:#0374D4;
 	border:none;
 	color:#FFF;
 }
@@ -2606,6 +2606,20 @@ footer .image-divider.fixed-height{
 	margin-top:10px;
 }
 
+#EM-logo{
+	font-family: 'Oswald', sans-serif; 
+	font-size:20px; 
+	color:#FFF; 
+	letter-spacing:3px; 
+	width:150px;
+	margin:0 auto;
+	text-align:center;
+	margin-top:50px;
+}
+
+.transparent{
+	color:#000;
+}
 
 /*===============================================*/
 /* 13. OTHER PAGE								 */
