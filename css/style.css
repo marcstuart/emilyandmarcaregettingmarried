@@ -485,9 +485,13 @@ img.with-border{
 	text-align:center;
 }
 
+#nav-menu .split-margin:before{
+	content: '';
+}
+
 #nav-menu > li.first-child:before{
 	content: "";
-	margin-left: 0;
+	margin-left: -45px;
 }
 
 #nav-menu > li a{
@@ -545,6 +549,7 @@ img.with-border{
 
 #nav-menu li:hover > ul{
 	display:block;
+	margin-left:-45px;
 }
 
 #nav-menu ul li{
