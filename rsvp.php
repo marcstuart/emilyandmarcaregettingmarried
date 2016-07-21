@@ -20,11 +20,13 @@
 				$finalmessage .= $_POST[$input_id."_label"]." : ". $_POST[$input_id] . "\n\n";
 			}
 		}
+		
+		$finalmessage .= "Email : ".$_POST["inputemail"]. "\n\n";
 	
 		$email_to  =  'marcstuart186@gmail.com, emilywhite00@gmail.com'; 
 		
-		$headers = "From: ".$_POST["inputemail"]."\r\n";	
-		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";	
+		$headers = "From: info@emilyandmarcaregettingmarried.co.uk \r\n";	
+		$headers .= "Reply-To: info@emilyandmarcaregettingmarried.co.uk \r\n";	
 		$subject = "RSVP message from ". $_POST["inputtitle"] ." ". $_POST["inputlastname"];	
 				
 		if(mail($email_to, $subject, $finalmessage, $headers)){
